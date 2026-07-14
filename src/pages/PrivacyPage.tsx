@@ -1,7 +1,16 @@
 import { Section } from '../components/Section'
 import { SEO } from '../components/SEO'
+import { useCallback } from 'react'
 
 export function PrivacyPage() {
+  const scrollToId = useCallback((e: React.MouseEvent, id: string) => {
+    e.preventDefault()
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [])
+
   return (
     <div>
       <SEO
@@ -25,22 +34,22 @@ export function PrivacyPage() {
             <div className="mb-8 rounded-3xl bg-white/5 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-pink-300">Contents</p>
               <nav className="mt-6 space-y-3 text-sm leading-7 text-zinc-300">
-                <a href="#introduction" className="block hover:text-white">Introduction</a>
-                <a href="#information" className="block hover:text-white">Information We Collect</a>
-                <a href="#how-we-use" className="block hover:text-white">How We Use Information</a>
-                <a href="#profile-visibility" className="block hover:text-white">Profile Visibility</a>
-                <a href="#user-photos" className="block hover:text-white">User Photos</a>
-                <a href="#data-sharing" className="block hover:text-white">Data Sharing</a>
-                <a href="#data-retention" className="block hover:text-white">Data Retention</a>
-                <a href="#account-deletion" className="block hover:text-white">Account Deletion</a>
-                <a href="#security" className="block hover:text-white">Security</a>
-                <a href="#children" className="block hover:text-white">Children's Privacy</a>
-                <a href="#third-party" className="block hover:text-white">Third-Party Services</a>
-                <a href="#additional-practices" className="block hover:text-white">Additional Privacy Practices</a>
-                <a href="#changes" className="block hover:text-white">Changes To This Policy</a>
-                <a href="#safety" className="block hover:text-white">Safety & Reporting</a>
-                <a href="#contact" className="block hover:text-white">Contact Information</a>
-              </nav>
+                  <a href="#introduction" onClick={(e) => scrollToId(e, 'introduction')} className="block hover:text-white">Introduction</a>
+                  <a href="#information" onClick={(e) => scrollToId(e, 'information')} className="block hover:text-white">Information We Collect</a>
+                  <a href="#how-we-use" onClick={(e) => scrollToId(e, 'how-we-use')} className="block hover:text-white">How We Use Information</a>
+                  <a href="#profile-visibility" onClick={(e) => scrollToId(e, 'profile-visibility')} className="block hover:text-white">Profile Visibility</a>
+                  <a href="#user-photos" onClick={(e) => scrollToId(e, 'user-photos')} className="block hover:text-white">User Photos</a>
+                  <a href="#data-sharing" onClick={(e) => scrollToId(e, 'data-sharing')} className="block hover:text-white">Data Sharing</a>
+                  <a href="#data-retention" onClick={(e) => scrollToId(e, 'data-retention')} className="block hover:text-white">Data Retention</a>
+                  <a href="#account-deletion" onClick={(e) => scrollToId(e, 'account-deletion')} className="block hover:text-white">Account Deletion</a>
+                  <a href="#security" onClick={(e) => scrollToId(e, 'security')} className="block hover:text-white">Security</a>
+                  <a href="#children" onClick={(e) => scrollToId(e, 'children')} className="block hover:text-white">Children's Privacy</a>
+                  <a href="#third-party" onClick={(e) => scrollToId(e, 'third-party')} className="block hover:text-white">Third-Party Services</a>
+                  <a href="#additional-practices" onClick={(e) => scrollToId(e, 'additional-practices')} className="block hover:text-white">Additional Privacy Practices</a>
+                  <a href="#changes" onClick={(e) => scrollToId(e, 'changes')} className="block hover:text-white">Changes To This Policy</a>
+                  <a href="#safety" onClick={(e) => scrollToId(e, 'safety')} className="block hover:text-white">Safety & Reporting</a>
+                  <a href="#contact" onClick={(e) => scrollToId(e, 'contact')} className="block hover:text-white">Contact Information</a>
+                </nav>
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-pink-300">Published by</p>
