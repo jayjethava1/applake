@@ -1,16 +1,8 @@
-import { useState } from 'react'
 import { Section } from '../components/Section'
 import { SEO } from '../components/SEO'
 import { siteConfig } from '../data/siteData'
 
 export function ContactPage() {
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <div>
       <SEO title="Contact" description="Get in touch with APPLAKE PRIVATE LIMITED for product strategy, engineering, support, and digital transformation consultations." />
