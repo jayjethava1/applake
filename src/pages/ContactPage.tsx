@@ -30,7 +30,7 @@ export function ContactPage() {
             <p className="mt-4 text-zinc-400">Location: {siteConfig.location}</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+          {/* <form onSubmit={handleSubmit} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="text-sm text-zinc-300">
                 Name
@@ -55,7 +55,7 @@ export function ContactPage() {
             </label>
             <button type="submit" className="mt-6 rounded-full bg-pink-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-pink-500">Send Message</button>
             {submitted && <p className="mt-4 text-sm text-pink-300">Thanks! Your message has been captured.</p>}
-          </form>
+          </form> */}
         </div>
       </Section>
     </div>
