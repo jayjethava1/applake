@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Section } from '../components/Section'
 import { SEO } from '../components/SEO'
 import { serviceDetails } from '../data/siteData'
@@ -36,7 +37,7 @@ export function ServicesPage() {
                       <span key={tech} className="rounded-full border border-white/10 px-3 py-1 text-sm text-zinc-300">{tech}</span>
                     ))}
                   </div>
-                  <a href="/contact" className="mt-8 inline-flex rounded-full bg-pink-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-pink-500">{service.cta}</a>
+                  <Link to="/contact" className="mt-8 inline-flex rounded-full bg-pink-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-pink-500">{service.cta}</Link>
                 </div>
               </div>
             </div>

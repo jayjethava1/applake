@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, CheckCircle2, Sparkles } from 'lucide-react'
 import { Section } from '../components/Section'
@@ -20,12 +21,12 @@ export function HomePage() {
             We build scalable mobile applications, web platforms, SaaS products, and enterprise software solutions.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-medium text-white transition hover:bg-pink-500">
+            <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-medium text-white transition hover:bg-pink-500">
               Get Started <ArrowRight size={16} />
-            </a>
-            <a href="/services" className="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 font-medium text-zinc-200 transition hover:border-pink-500/40 hover:text-white">
+            </Link>
+            <Link to="/services" className="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 font-medium text-zinc-200 transition hover:border-pink-500/40 hover:text-white">
               View Services
-            </a>
+            </Link>
           </div>
         </motion.div>
 
@@ -79,7 +80,7 @@ export function HomePage() {
                   <li key={benefit} className="flex items-center gap-2"><CheckCircle2 size={16} className="text-pink-400" />{benefit}</li>
                 ))}
               </ul>
-              <a href="/services" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-pink-300">Learn More <ArrowRight size={15} /></a>
+              <Link to="/services" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-pink-300">Learn More <ArrowRight size={15} /></Link>
             </motion.article>
           ))}
         </div>
@@ -118,7 +119,7 @@ export function HomePage() {
                   <span key={feature} className="rounded-full border border-pink-500/20 bg-zinc-900/70 px-3 py-1 text-sm text-zinc-300">{feature}</span>
                 ))}
               </div>
-              <a href="/products" className="mt-8 inline-flex items-center gap-2 rounded-full border border-pink-500/40 px-5 py-3 text-sm font-medium text-pink-200 transition hover:bg-pink-500/20">Learn More <ArrowRight size={15} /></a>
+              <Link to="/products" className="mt-8 inline-flex items-center gap-2 rounded-full border border-pink-500/40 px-5 py-3 text-sm font-medium text-pink-200 transition hover:bg-pink-500/20">Learn More <ArrowRight size={15} /></Link>
             </div>
             <div className="rounded-[1.5rem] border border-white/10 bg-zinc-900/80 p-8">
               <div className="h-56 rounded-[1.25rem] border border-dashed border-white/15 bg-gradient-to-br from-zinc-800 to-zinc-950" />
@@ -151,7 +152,7 @@ export function HomePage() {
           <p className="text-sm uppercase tracking-[0.3em] text-pink-300">Let’s build</p>
           <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">Ready To Build Your Next Digital Product?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-zinc-400">Share your goals and we’ll help shape a reliable product path from concept to delivery.</p>
-          <a href="/contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-medium text-white transition hover:bg-pink-500">Contact Us <ArrowRight size={16} /></a>
+          <Link to="/contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-medium text-white transition hover:bg-pink-500">Contact Us <ArrowRight size={16} /></Link>
         </div>
       </Section>
     </div>
