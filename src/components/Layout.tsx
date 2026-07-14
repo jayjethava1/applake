@@ -101,6 +101,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </ul>
           </div>
           <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">Legal</h4>
+            <ul className="mt-4 space-y-3 text-sm text-zinc-400">
+              <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="hover:text-white">Terms & Conditions</Link></li>
+            </ul>
+          </div>
+          <div>
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">Services</h4>
             <ul className="mt-4 space-y-3 text-sm text-zinc-400">
               <li>Mobile Apps</li>
