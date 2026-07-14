@@ -36,6 +36,7 @@ export function PrivacyPage() {
                 <a href="#security" className="block hover:text-white">Security</a>
                 <a href="#children" className="block hover:text-white">Children's Privacy</a>
                 <a href="#third-party" className="block hover:text-white">Third-Party Services</a>
+                <a href="#additional-practices" className="block hover:text-white">Additional Privacy Practices</a>
                 <a href="#changes" className="block hover:text-white">Changes To This Policy</a>
                 <a href="#safety" className="block hover:text-white">Safety & Reporting</a>
                 <a href="#contact" className="block hover:text-white">Contact Information</a>
@@ -197,6 +198,48 @@ export function PrivacyPage() {
               <p className="text-zinc-400 leading-8">
                 These service providers process data only as needed to support the platform and operate under their own privacy practices.
               </p>
+            </section>
+
+            <section id="additional-practices" className="space-y-6">
+              <h2 className="text-2xl font-semibold text-white">Additional Privacy and Safety Practices</h2>
+              <div className="space-y-5 rounded-3xl bg-zinc-950/80 p-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Data Portability and User Rights</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    Users may request access to their personal information, request correction of inaccurate information, request deletion of their account, or ask for information about how their data is processed. We will respond to such requests in accordance with applicable law.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Cross-Border Data Processing</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    User information may be processed and stored on servers located in different countries depending on our infrastructure, service providers, and operational needs. Such transfers are carried out in accordance with applicable privacy requirements.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Cookies and Similar Technologies</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    The website may use essential cookies, security cookies, and analytics or functionality cookies to support secure access, performance monitoring, and user experience improvements. Users may manage browser settings related to cookies where supported.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Security Incident Notification</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    In the event of a significant security incident affecting user information, APPLAKE PRIVATE LIMITED may notify affected users and take appropriate corrective measures as required by applicable law.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Law Enforcement and Legal Requests</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    We may disclose user information when required by law, court order, legal process, or governmental authority, or where necessary to protect the rights, safety, or property of users or the platform.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">Automated Moderation and Abuse Detection</h3>
+                  <p className="mt-4 text-zinc-400 leading-7">
+                    The platform may use automated systems and review tools to detect spam, fraud, fake profiles, abusive behavior, or violations of platform policies. These systems support safety and moderation efforts but do not replace human review where necessary.
+                  </p>
+                </div>
+              </div>
             </section>
 
             <section id="safety" className="space-y-6">
