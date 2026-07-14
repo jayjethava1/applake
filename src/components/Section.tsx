@@ -5,9 +5,8 @@ export function Section({ children, className = '', id }: { children: React.Reac
     <motion.section
       id={id}
       initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
       className={className}
     >
       {children}
