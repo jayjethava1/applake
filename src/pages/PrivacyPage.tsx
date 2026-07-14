@@ -21,7 +21,7 @@ export function PrivacyPage() {
 
       <Section className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start">
-          <aside className="hidden rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-zinc-300 lg:block lg:sticky lg:top-24">
+          <aside className="hidden rounded-[2rem] border border-white/10 bg-zinc-950/70 p-8 text-zinc-300 lg:block lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-4">
             <div className="mb-8 rounded-3xl bg-white/5 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-pink-300">Contents</p>
               <nav className="mt-6 space-y-3 text-sm leading-7 text-zinc-300">

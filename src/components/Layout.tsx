@@ -46,12 +46,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
             ))}
           </nav>
           <div className="hidden md:flex">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-pink-500/40 bg-pink-500/10 px-4 py-2 text-sm font-medium text-pink-200 transition hover:bg-pink-500/20"
             >
               Book Consultation <ArrowRight size={16} />
-            </a>
+            </Link>
           </div>
           <button
             type="button"
