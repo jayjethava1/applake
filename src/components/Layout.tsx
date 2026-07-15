@@ -8,7 +8,16 @@ import { StructuredData } from './StructuredData'
 export function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [logoSrc, setLogoSrc] = useState('/applake-logo.svg')
   const [logoError, setLogoError] = useState(false)
+
+  function handleLogoError() {
+    if (logoSrc.endsWith('.svg')) {
+      setLogoSrc('/applake-logo.png')
+    } else {
+      setLogoError(true)
+    }
+  }
 
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 450)
@@ -29,7 +38,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-2">
             {!logoError ? (
-              <img src="/applake-logo.png" alt="APPLAKE" className="h-10 w-auto" onError={() => setLogoError(true)} />
+              <img src={logoSrc} alt="APPLAKE" className="h-10 w-auto" onError={handleLogoError} />
             ) : (
               <span className="text-lg font-semibold tracking-[0.2em] text-white">{siteConfig.companyName.replace('PRIVATE LIMITED', '')}</span>
             )}
@@ -91,7 +100,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
           <div>
             {!logoError ? (
-              <img src="/applake-logo.png" alt="APPLAKE" className="h-12 w-auto" onError={() => setLogoError(true)} />
+              <img src={logoSrc} alt="APPLAKE" className="h-12 w-auto" onError={handleLogoError} />
             ) : (
               <h3 className="text-lg font-semibold">{siteConfig.companyName}</h3>
             )}
