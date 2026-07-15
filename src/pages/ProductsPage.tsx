@@ -29,7 +29,9 @@ export function ProductsPage() {
               </ul>
             </div>
             <div className="rounded-[1.5rem] border border-white/10 bg-zinc-900/80 p-8">
-              <div className="h-56 rounded-[1.25rem] border border-dashed border-white/15 bg-gradient-to-br from-zinc-800 to-zinc-950" />
+              <div className="flex h-56 items-center justify-center rounded-[1.25rem] border border-dashed border-white/15 bg-gradient-to-br from-zinc-800 to-zinc-950">
+                <img src="/saathi-logo.svg" alt="SAATHI logo" className="h-28 w-auto" />
+              </div>
             </div>
           </div>
         </div>

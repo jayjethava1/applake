@@ -1,18 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="APPLAKE logo">
-  <defs>
-    <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0%" stop-color="#003366"/>
-      <stop offset="100%" stop-color="#0077CC"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" fill="none" />
-  <!-- stylized A -->
-  <g transform="translate(10,10)">
-    <path d="M30 80 L60 16 L90 80 Z" fill="url(#g1)" />
-    <path d="M50 56 Q60 48 72 56" stroke="#00AEEF" stroke-width="6" fill="none" stroke-linecap="round" />
-  </g>
-  <!-- wordmark -->
-  <text x="120" y="76" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="36" fill="#01314A" font-weight="700">APPLAKE</text>
-  <text x="122" y="100" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="12" fill="#6B7280">PRIVATE LIMITED</text>
+<svg width="600" height="140" viewBox="0 0 600 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- A Icon -->
+  <path
+    d="M50 110L105 20L160 110"
+    stroke="#DDEBFF"
+    stroke-width="14"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Wave -->
+  <path
+    d="M70 92C95 72 125 72 150 92"
+    stroke="#60A5FA"
+    stroke-width="8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- APPLAKE -->
+  <text
+    x="195"
+    y="102"
+    font-family="Inter, Poppins, Arial, sans-serif"
+    font-size="72"
+    font-weight="700"
+    letter-spacing="4"
+    fill="#EAF2FF"
+  >
+    PPLAKE
+  </text>
+
 </svg>

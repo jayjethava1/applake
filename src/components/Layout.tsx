@@ -13,7 +13,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   function handleLogoError() {
     if (logoSrc.endsWith('.svg')) {
-      setLogoSrc('/applake-logo.png')
+      setLogoSrc('/applake-logo.svg')
     } else {
       setLogoError(true)
     }
