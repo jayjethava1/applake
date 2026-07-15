@@ -165,19 +165,21 @@ export function PrivacyPage() {
             <section id="data-retention" className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Data Retention</h2>
               <p className="text-zinc-400 leading-8">
-                We retain information while accounts remain active and as needed to provide services. When an account is deleted, we remove or anonymize profile data wherever possible.
+                We retain personal data for as long as necessary to provide the SAATHI services, maintain account security, protect the community, and comply with applicable legal and operational requirements.
               </p>
               <p className="text-zinc-400 leading-8">
-                Certain records may be retained to satisfy legal requirements, resolve disputes, prevent fraud, or support security investigations.</p>
+                If an account becomes inactive, we may notify the user and, after a reasonable period of inactivity, deactivate the account. If the account is not reactivated within the stated period, we may delete or anonymize the account data, unless we are required to keep certain records for legal, fraud-prevention, dispute-resolution, or security purposes.
+              </p>
             </section>
 
             <section id="account-deletion" className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Account Deletion</h2>
               <p className="text-zinc-400 leading-8">
-                Users may request account deletion by emailing <a href="mailto:techflakespvtltd@gmail.com" className="text-pink-300 hover:text-pink-200">techflakespvtltd@gmail.com</a>.
+                Users may request account deletion at any time by emailing <a href="mailto:techflakespvtltd@gmail.com" className="text-pink-300 hover:text-pink-200">techflakespvtltd@gmail.com</a>.
               </p>
               <p className="text-zinc-400 leading-8">
-                Upon deletion, profile information is removed or anonymized where applicable. Some data may remain for legal, fraud prevention, or security purposes, consistent with our retention policies.</p>
+                We will begin processing verified deletion requests promptly and, where no legal or security exception applies, complete deletion or anonymization within a reasonable period after confirmation, typically within 30 days. For inactive accounts, we may also deactivate the account after extended inactivity and later remove or anonymize data if the account is not reactivated.
+              </p>
             </section>
 
             <section id="security" className="space-y-4">

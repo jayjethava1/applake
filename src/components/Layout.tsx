@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import { ArrowRight, Menu, X, Sparkles } from 'lucide-react'
+import { ArrowRight, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { navLinks, siteConfig } from '../data/siteData'
 import { BackToTop } from './BackToTop'
@@ -8,6 +8,7 @@ import { StructuredData } from './StructuredData'
 export function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [logoError, setLogoError] = useState(false)
 
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 450)
@@ -26,11 +27,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       )}
       <header className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-3 text-lg font-semibold tracking-[0.2em] text-white">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-pink-500/40 bg-pink-500/10 text-pink-300">
-              <Sparkles size={18} />
-            </span>
-            {siteConfig.companyName.replace('PRIVATE LIMITED', '')}
+          <Link to="/" className="flex items-center gap-2">
+            {!logoError ? (
+              <img src="/applake-logo.png" alt="APPLAKE" className="h-10 w-auto" onError={() => setLogoError(true)} />
+            ) : (
+              <span className="text-lg font-semibold tracking-[0.2em] text-white">{siteConfig.companyName.replace('PRIVATE LIMITED', '')}</span>
+            )}
           </Link>
           <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
             {navLinks.map((link) => (
@@ -88,7 +90,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <footer className="border-t border-white/10 bg-black/70">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
           <div>
-            <h3 className="text-lg font-semibold">{siteConfig.companyName}</h3>
+            {!logoError ? (
+              <img src="/applake-logo.png" alt="APPLAKE" className="h-12 w-auto" onError={() => setLogoError(true)} />
+            ) : (
+              <h3 className="text-lg font-semibold">{siteConfig.companyName}</h3>
+            )}
             <p className="mt-3 text-sm text-zinc-400">{siteConfig.tagline}</p>
             <p className="mt-4 text-sm text-zinc-400">{siteConfig.location}</p>
           </div>
