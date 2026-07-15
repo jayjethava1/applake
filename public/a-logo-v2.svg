@@ -1,0 +1,18 @@
+<svg width="256" height="256" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" fill="transparent"/>
+  <path
+    d="M50 160L110 40L170 160"
+    stroke="#DDEBFF"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M70 120C90 94 130 94 150 120"
+    stroke="#60A5FA"
+    stroke-width="10"
+    stroke-linecap="round"
+    fill="none"
+  />
+</svg>

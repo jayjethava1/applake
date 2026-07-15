@@ -122,7 +122,9 @@ export function HomePage() {
               <Link to="/products" className="mt-8 inline-flex items-center gap-2 rounded-full border border-pink-500/40 px-5 py-3 text-sm font-medium text-pink-200 transition hover:bg-pink-500/20">Learn More <ArrowRight size={15} /></Link>
             </div>
             <div className="rounded-[1.5rem] border border-white/10 bg-zinc-900/80 p-8">
-              <div className="h-56 rounded-[1.25rem] border border-dashed border-white/15 bg-gradient-to-br from-zinc-800 to-zinc-950" />
+              <div className="flex h-56 items-center justify-center rounded-[1.25rem] border border-dashed border-white/15 bg-gradient-to-br from-zinc-800 to-zinc-950">
+                <img src="/saathi-logo.svg" alt="SAATHI logo" className="h-28 w-auto" />
+              </div>
             </div>
           </div>
         </div>
